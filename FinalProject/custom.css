@@ -1,47 +1,28 @@
-.b.navbar {
-  margin-bottom: 0;
+  .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 100%; 
+      margin: auto;
+      min-height:200px;
+  }
+
+  @media (max-width: 300px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+  html, body, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Baloo', cursive;
+  color: white;
+}
+body {
   background-color: black;
-  border: 0;
-  font-size: 11px ;
-  letter-spacing: 4px;
-  opacity: 0.9;
 }
-
-
-.navbar li a, .navbar .navbar-brand { 
-  color: #d5d5d5 ;
-}
-
-
-.navbar-nav li a:hover {
-  color: black ;
-}
-
-
-.navbar-nav li.active a {
-  color: black ;
-  background-color:#6a207f ;
-}
-
-
-.navbar-default .navbar-toggle {
-  border-color: #6a207f;
-}
-
-
-.open .dropdown-toggle {
-  color: #fff ;
-  background-color: #6a207f ;
-}
-
-
-.dropdown-menu li a {
-  color: black ;
-}
-
-
-.dropdown-menu li a:hover {
-  background-color: #6a207f ;
-}
-
-
