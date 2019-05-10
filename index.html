@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('https://media.defense.gov/2014/Nov/21/2000984845/-1/-1/0/141118-F-XP707-005.JPG');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("https://cdn.pixabay.com/photo/2014/12/03/21/20/kittens-555822_960_720.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("https://live.staticflickr.com/4246/34868176695_5c82ab448c_b.jpg");
+  min-height: 400px;
+}
+/* Fourth image (Contact) */
+.bgimg-4 {
+  background-image: url("https://static1.squarespace.com/static/54e8ba93e4b07c3f655b452e/t/5908ea16bebafbd5175c401f/1493757618431/");
+  min-height: 400px;
+}
+/* Fourth image (Contact) */
+.bgimg-5 {
+  background-image: url("https://cdn.pixabay.com/photo/2015/03/26/09/54/pug-690566_960_720.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+<body>
+
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i ></i> WHAT'S HAPPENING</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i ></i> GALLERY/QUOTES</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i ></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+    </a>
+  </div>
+
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#what's happening" class="w3-bar-item w3-button" onclick="toggleFunction()">WHAT'S HAPPENING</a>
+    <a href="#gallery/quotes" class="w3-bar-item w3-button" onclick="toggleFunction()">GALLERY/QUOTES</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+  </div>
+</div>
+
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">SAVE <span class="w3-hide-small">THE</span> ANIMALS</span>
+  </div>
+</div>
+
+ <div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">Home</h3>
+  <p class="w3-center"><em>We're helping those who can't wait</em></p>
+  <p>We have been rescuing and sheltering abandoned, abused, and homeless dogs and cats in areas around us. There are roughly two million dogs and cats killed in U.S. shelters  because they lack a home.  </p>
+  </div>
+
+
+
+<div class="bgimg-5 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">WHAT'S HAPPENING</span>
+  </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <p> Animals are humanely killed usually by a lethal injection when they have been there for a certain time or the shelter has run out of space. There are also no kill shelters, but these can end up turning many dogs away to far worse fates since they end up full of unadoptable animals.</p>
+      <p>Adopt, don’t shop – shelter pets have every bit as much love to give as one from a breeder. If you do none of these things, then do this at least look closely at those shelter workers and think about the pain they willingly take on every day because someone else chose not to hold up their end of the bargain.</p>
+    
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="w3-margin-right"></i>STATISTICS</b></p><br>
+      <img src="https://petapixel.com/assets/uploads/2013/02/breedingignorance-7.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="200" height="333">
+    </div>
+
+
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>About six million animals enter shelters every year.
+Approximately <strong>32%</strong> of animals are killed ( <strong>22%</strong> of dogs and <strong>45%</strong> of cats).</p>
+      <p>Less than <strong>50%</strong> of shelter animals are irremediably suffering.</p>
+      <p>Over one million people live in communities saving between <strong>98%</strong> and <strong>99%</strong> of dogs and cats in their shelters (over two million saving at least <strong>98%</strong> of dogs).</p>
+      <p>Over 10 million people live in communities saving between <strong>90%</strong> and <strong>99%</strong> of dogs and cats in their shelters. </p>
+      <p>Over 50 million people live in communities saving at least <strong>80%</strong> of dogs and cats in their shelters.</p>
+    
+    </div>
+  </div>
+  
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">14+</span><br>
+    Partners
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">55+</span><br>
+    Projects Done
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">89+</span><br>
+    Happy Clients
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">150+</span><br>
+    Meetings
+  </div>
+</div>
+
+
+<div class="bgimg-4 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">GALLERY/QUOTES</span>
+  </div>
+</div>
+
+
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">ANIMAL LOVERS</h3>
+  <p class="w3-center"><em>4 animal quotes that will inspire you</em></p>
+
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="https://www.animalreikisource.com/wp-content/uploads/2015/07/youth-advocates-Large.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="dog" style="width:100%">
+        <div class="w3-container">
+          <h3>Anatole France</h3>
+          <p>“Until one has loved an animal, a part of one’s soul remains unawakened.”</p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="https://live.staticflickr.com/6/8818200_5e3fec7f2a_z.jpg"class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="cat" style="width:100%">
+        <div class="w3-container">
+          <h3>Pam Brown</h3>
+          <p>"One small cat changes coming home to an empty house to coming home.”</p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="https://www.animalreikisource.com/wp-content/uploads/2015/04/Dollarphotoclub_80987444-Large-1024x683.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="dog" style="width:100%">
+        <div class="w3-container">
+          <h3>Milan Kundera</h3>
+          <p>“Dogs are our link to paradise. They don’t know evil or jealousy or discontent.”</p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?cs=srgb&dl=animal-cat-cute-45201.jpg&fm=jpg"class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="cat" style="width:100%">
+        <div class="w3-container">
+          <h3>Martin Buber</h3>
+          <p>“An animal’s eyes have the power to speak a great language.”</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="w3-container w3-center" style="padding:128px 16px" id="pricing">
+  <h3>HELP SAVE THE ANIMALS</h3>
+  <p><em>When you donate medicine or food or lifesaving surgery, you impact the lives of the poor and homeless dogs and cats that are in shelters. Each year, our donors help provide more than 46,380 articles of medicine and food to the animals who are desperate need of help.</em></p>
+  <p><em>So donate and help them today.</em></p>
+  <p class="w3-large">
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+          <h2 class="w3-wide">$ 50</h2>
+          <span class="w3-opacity">Medicine for pet</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding- w3-opacity w3-hover-opacity-off">DONATE</button>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+          <h2 class="w3-wide">$ 100</h2>
+          <span class="w3-opacity">Food for pets</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding- w3-opacity w3-hover-opacity-off">DONATE</button>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+          <h2 class="w3-wide">$ 500</h2>
+          <span class="w3-opacity">Lifesaving surgery</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding- w3-opacity w3-hover-opacity-off">DONATE</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+
+<div class="w3-container " style="padding:128px 16px" id="contact">
+  <h3 class="w3-center"><em>We find homes for abandoned cats and dogs in New York City and throughout United States, we also provide behavior involvement when needed to improve chances of adoption.</em></h3>
+  <p class="w3-center w3-large"><strong>Help us save the animals. Join us today:</strong></p>
+  <div style="margin-top:48px">
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="First Name" required name="First Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Last Name" required name="Last Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Phone Number" required name="Phone Number"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p>
+        <button class="w3-button w3-black w3-opacity w3-hover-opacity-off" type="submit">
+          <i class="send"></i> SEND 
+        </button>
+      </p>
+    </form>
+
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+      <h3>© 2019 Save the animals | New York Brooklyn</h3>
+      <h4> 64 West Beech Rd. New York, NY 10027. </h4>  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+  </div>
+</footer>
+ 
+ 
+
+
+</body>
+</html>
